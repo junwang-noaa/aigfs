@@ -74,15 +74,24 @@ Collaborate with partners to create a common cloud-based data source for sharing
 ## Future Development
 New techniques will be applied to the AIGFS model.
 
-- Integrating of physics-informed constraints, optimizing loss functions, addressing stochastic uncertainty, updating ML architecture, and improving scalability
-   * Implement global mass and energy conservation constraints
 
-- Develop AI fully coupled earth modeling system to include other model components for wave, land, ocean, and seaice etc.
-   * Add marine components for a coupled system (e.g., wave height, period, and direction)
+### Apply advancements to improve model performance and efficiency
+This includes integrating of physics-informed constraints, optimizing loss functions, addressing stochastic uncertainty, updating ML architecture, and improving scalability
+- Implement global mass and energy conservation constraints
 
-- Explore increase model spatial(horizontal and vertical) and temporal resolution. The technical resolution limits for AIGFS in particular with respect to training the model will be investigated and an optimal vertical and temporal resolutions will be decided.
-   * Increase vertical resolution from 13 to 37 levels to provide better vertical profiles.
-   * Increase temporal resolution from 6 hourly to 3 hourly
+### Develop AI fully coupled earth modeling system 
+- Add marine components for a coupled system (e.g., wave height, period, and direction)
+- integrate other model components including land, ocean, and seaice etc.
+
+
+### Explore increase model spatial(horizontal and vertical) and temporal resolution.
+The technical resolution limits for AIGFS in particular with respect to training the model will be investigated and an optimal vertical and temporal resolutions will be decided.
+- Increase vertical resolution from 13 to 37 levels to provide better vertical profiles.
+- Increase temporal resolution from 6 hourly to 3 hourly
+
+
+### Generate new products to support forecasters
+- Expand the forecast fields to generate more structured and physical meanful fields
 
 ### Infrastructure
 - Extend GPU parallelization capabilities during the training process.
@@ -94,27 +103,25 @@ All new features will be integrated incrementally. Beta versions will be release
 The development team is charged with executing and delivering the goals outlined above.
 
 Key Entities: 
-MDC: 
-OAR: 
-EPIC: 
-NCO: 
+- MDC: Collaborate with interagency partners to manage the full lifecycle of AIGFS, spanning iterative model development, rigorous performance testing, comprehensive statistical evaluation, and final operational implementation
+
+- OAR: Apply scientific and technical research advancement to improve the model performance
+
+- EPIC: Collabrate with partners to build common AI/ML framework to support NOAA AI/ML development
+
+- NCO: Perform final testing, confirm standards compliance, disseminate the output, deploy into production, provide the architecture to run it on and provide tier 1 and tier 2 support 24/7/365.
 
 ## Schedule
 Milestones for the near term plans
 
 |   Quarter   |                    Goals                              |     Notes          | 
 |-------------|-------------------------------------------------------|--------------------|
-| 2025Q2      | Improve hurricane intensity by a) using AMSE loss     |                    |
-|             | function 2) updating variable scaling 3) adding       |                    |
-|             | recent data sets in training data                     |                    |
-|-------------|-------------------------------------------------------|--------------------|
-| 2025Q3      | 1. Generate retrospective run and evaluate results    |                    |
-|             | 2. Transition to Anemoi framework, confirm model      |                    |
-|             |    inference and training in Anemoi framework         |                    |
+| 2025Q2      | Improve hurricane intensity by 1. using AMSE loss function, 2. updating variable scaling, 3. adding recent data sets in training data                     |                    |
+| 2025Q3      | 1. Generate retrospective run and evaluate results, 2. Transition to Anemoi framework, confirm model inference and training in Anemoi framework         |               |
 |-------------|-------------------------------------------------------|--------------------|
 |             | Implement the develop version  into operation         |                    |                    |
-|             |                                                       |                    |
-|             |                                                       |                    |
+|  2025Q4     |                                                       |                    |
+|  2026Q1     |                                                       |                    |
 
 ## Repositories
 
