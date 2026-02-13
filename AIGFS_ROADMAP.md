@@ -74,21 +74,18 @@ Collaborate with partners to create a common cloud-based data source for sharing
 ## Future Development
 New techniques will be applied to the AIGFS model.
 
-### Integrating of physics-informed constraints, optimizing loss functions, addressing stochastic uncertainty, updating ML architecture, and improving scalability
+- Integrating of physics-informed constraints, optimizing loss functions, addressing stochastic uncertainty, updating ML architecture, and improving scalability
+   * Implement global mass and energy conservation constraints
 
-- Implement global mass and energy conservation constraints
+- Develop AI fully coupled earth modeling system to include other model components for wave, land, ocean, and seaice etc.
+   * Add marine components for a coupled system (e.g., wave height, period, and direction)
 
-### Develop AI fully coupled earth modeling system to include other model components for wave, land, ocean, and seaice etc.
+- Explore increase model spatial(horizontal and vertical) and temporal resolution. The technical resolution limits for AIGFS in particular with respect to training the model will be investigated and an optimal vertical and temporal resolutions will be decided.
+   * Increase vertical resolution from 13 to 37 levels to provide better vertical profiles.
+   * Increase temporal resolution from 6 hourly to 3 hourly
 
--  Add marine components for a coupled system (e.g., wave height, period, and direction)
-
-### Explore increase model spatial(horizontal and vertical) and temporal resolution. The technical resolution limits for AIGFS in particular with respect to training the model will be investigated and an optimal vertical and temporal resolutions will be decided.
-
--  Increase vertical resolution from 13 to 37 levels to provide better vertical profiles.
--  Increase temporal resolution from 6 hourly to 3 hourly
-
-- Infrastructure
-    * Extend GPU parallelization capabilities during the training process.
+### Infrastructure
+- Extend GPU parallelization capabilities during the training process.
 
 ## Releases
 All new features will be integrated incrementally. Beta versions will be released as individual or combined features demonstrate improved performance, followed by an annual formal release for operational implementation
@@ -116,9 +113,8 @@ Milestones for the near term plans
 |             |    inference and training in Anemoi framework         |                    |
 |-------------|-------------------------------------------------------|--------------------|
 |             | Implement the develop version  into operation         |                    |                    |
-|-------------|-------------------------------------------------------|--------------------|
 |             |                                                       |                    |
-|-------------|-------------------------------------------------------|--------------------|
+|             |                                                       |                    |
 
 ## Repositories
 
