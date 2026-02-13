@@ -21,7 +21,6 @@ Documentation & Testing: No code modifications will take place without first hav
 
 Responsibility: Effective code documentation is the responsibility of every developer to enhance readability, maintainability, and collaboration. Developers are encouraged to write tests and documentation to ensure code correctness and robustness.
 
-
 CI/CD: Operational standards are integrated through a CI/CD pipeline during the model development process to streamline fast deployment
 
 ## Current Status (AIGFS v1.0)
@@ -38,12 +37,12 @@ Performance: Outperforms operational GFS with significantly improved synoptic-sc
 ## Near term plans
 Following AIGFS v1 implementation, continuous development will be carried out to add new features in the EAGLE SOLO system and then transition to operation. Immediate goals include improving hurricane intensity forecasts, producing more products, and sharpening the long lead time forecasts.
 
-##### Repository Integration
+#### Repository Integration
 - Collaborate with EPIC and OAR labs to integrate operational code into a common repository.
 
 - Build the Anemoi framework, including the capability to run operational AI models.
 
-##### New Features
+#### New Features
 
 - Dataset Updates
 Update training dataset with the latest 2024-2025 GFSv16 data and GFSv17 retrospective analysis using UFS2ARCO.
