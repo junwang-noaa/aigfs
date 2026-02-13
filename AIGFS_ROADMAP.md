@@ -104,7 +104,7 @@ The development team is charged with executing and delivering the goals outlined
 Key Entities: 
 - MDC: Collaborate with interagency partners to manage the full lifecycle of AIGFS, spanning iterative model development, rigorous performance testing, comprehensive statistical evaluation, and final operational implementation
 
-- OAR: Apply scientific and technical research advancement to improve the model performance
+- OAR: Accelerate research and development to push the frontier of AI weather modeling, focusing on scientific innovations that improve the model’s forecast ability to capture high-impact weather events and reduce systematic biases.
 
 - EPIC: Collabrate with partners to build common AI/ML framework to support NOAA AI/ML development
 
