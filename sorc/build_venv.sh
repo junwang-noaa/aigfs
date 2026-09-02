@@ -7,11 +7,9 @@ set +u
 readonly HOMEaigfs=$(cd $(dirname $(readlink -f -n "${BASH_SOURCE[0]}"))/.. && pwd -P)
 
 source ../versions/build.ver
+
 #set +x
 # TODO: Make this work for non-WCOSS platforms
-#module reset
-#jwmodule load "PrgEnv-intel/${PrgEnv_intel_ver:?}"
-echo "beforesource intel 2023.2.1 vars.sh"
 
 source /opt/intel/oneapi/modulefiles-setup.sh
 source /opt/intel/oneapi/compiler/2023.2.1/env/vars.sh
@@ -20,11 +18,13 @@ source /opt/intel/oneapi/modulefiles-setup.sh
 export PATH=$PATH:/opt/intel/oneapi/mpi/2021.18/bin
 module use  /opt/intel/oneapi/mpi/2021.18/etc/modulefiles/mpi/
 module load 2021.18
-echo "after load modulel"
 module use /lfs/work/alexander_richert/stack/spack-stack/envs/nco-sci-intel-2021.10.0/modules_flat/Core
-#module load "intel/${intel_ver:?}"
-#jw module load "python/${python_ver:?}"
 module load "g2c/${g2c_ver:?}"
+
+#build GPU version
+module use /lfs/work/alexander_richert/stack/spack/var/spack/environments/cuda/modules_flat/linux-rocky9-x86_64/Core
+module load cuda/12.9.1-3hoj3a5
+
 module list
 
 set -ux
