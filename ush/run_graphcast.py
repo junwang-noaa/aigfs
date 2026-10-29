@@ -8,8 +8,8 @@ Revision history:
     -20250506: Linlin Cui, moved hard coded model weights to a json file
     -20261026: write GRIB2 through an asynchronous multi-process CPU pipeline
                (AsyncGrib2Writer) so encoding overlaps with the GPU rollout
-    -20261026: host-side work for each step runs on a background thread so the
-               GPU starts the next step immediately; --monitor timing report
+    -20261026: host-side work for each step runs on an OPENMP CPU thread to release
+               GPU for the next step immediately; add --monitor timing report
 '''     
 import os
 import argparse

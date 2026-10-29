@@ -159,27 +159,8 @@ class Grib2Writer:
         grib2_out_sfc.close()
         grib2_out_pres.close()
 
-        # Use wgrib2 to generate index files
-        for outfile in [outfile_sfc, outfile_pres]:
-            output_idx_file = f"{outfile}.idx"
-            
-            # Construct the wgrib2 command
-            wgrib2_command = ['wgrib2', '-s', outfile]
-            
-            try:
-                # Open the output file for writing
-                with open(output_idx_file, "w") as f_out:
-                    # Execute the wgrib2 command and redirect stdout to the output file
-                    subprocess.run(wgrib2_command, stdout=f_out, check=True)
-            
-                print(f"Index file created successfully: {output_idx_file}")
-            
-            except subprocess.CalledProcessError as e:
-                print(f"Error running wgrib2 command: {e}")
 
-
-# Each worker packs one lead time single-threaded; without this every worker (and the
-# wgrib2 it runs) starts an OpenMP team sized to the whole node and they thrash.
+# Each worker packs one lead time single-threaded
 _WORKER_THREAD_ENV = ("OMP_NUM_THREADS", "MKL_NUM_THREADS", "OPENBLAS_NUM_THREADS")
 
 # Per-worker Grib2Writer, built once by the pool initializer so the json table
